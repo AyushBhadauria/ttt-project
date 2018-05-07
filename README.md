@@ -4,9 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files or Run  `ng build` for a dev server. 
 
 Run `cd server` and hit `node app.js`. This will start the server. Now the server will be running on `http://localhost:3000/`
+
+
+## Technologies Used
+
+`Angular 5` Frontend
+
+`Node.js` Backend
+
+`Bootstrap 4` Styling
+
 
 ## Angular 5 Frontend
 `app.module.ts` file 
