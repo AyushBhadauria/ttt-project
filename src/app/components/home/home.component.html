@@ -1,0 +1,29 @@
+<div *ngIf=loading class="loading">Loading&#8230;</div>
+<div  *ngIf=!loading class="container">
+<form #myForm="ngForm" id="myForm" (ngSubmit)="onSubmit()">
+<div class="form-group">
+    <input required  type="number"  [(ngModel)]="count"  name="count"   class="form-control">
+</div>
+<button [disabled]="!myForm.form.valid" class="btn btn-primary" type="submit">Submit</button>
+</form>
+<hr/>
+        <h2>Most Frequently Used Words in the File</h2>
+        <p>Currently displaying  <b>{{count}}</b>  no of most frequently words in the file</p>            
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Word</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let res of response; let i = index">
+              <td>{{i}}</td>
+              <td>{{res?.item}}</td>
+              <td>{{res?.count}}</td>
+            </tr>
+          </tbody>
+        </table>
+     
+</div>
